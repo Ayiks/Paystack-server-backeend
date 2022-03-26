@@ -80,3 +80,12 @@ export const submitOtp = async (req: Request, res: Response) => {
     return res.status(400).send("Charge OTP validation failed");
   }
 };
+
+export const handleWebhook = async (req: Request, res: Response) => {
+  try {
+    console.log(`Incoming data: ${req.body}`);
+  } catch (error) {
+    console.log("Webhook Error:", error);
+    return res.status(400).send("Something went wrong");
+  }
+};
