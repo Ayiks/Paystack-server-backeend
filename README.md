@@ -18,6 +18,6 @@
 
 8. Deploy to `Heroku` or `Cyclic` and enjoy
 
-[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/kwakulartey/paystack-backend)
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://github.com/Ayiks/Paystack-server-backeend)
 
 [![Deploy to Cyclic](https://deploy.cyclic.app/button.svg)](https://deploy.cyclic.app/)
