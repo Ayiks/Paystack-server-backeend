@@ -93,6 +93,7 @@ export const handleWebhook = async (req: Request, res: Response) => {
     // Save it to Firebase
     const invoiceCollection = collection(firestore, "invoices");
     addDoc(invoiceCollection, req.body);
+    return res.json(req.body);
   } catch (error) {
     console.log("Webhook Error:", error);
     return res.status(400).send("Something went wrong");
