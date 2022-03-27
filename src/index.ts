@@ -18,3 +18,6 @@ app.listen(PORT, () =>
 
 // package.json
 // "prebuild": "tslint -c tslint.json -p tsconfig.json --fix",
+//  "build": "tsc",
+// "prestart": "npm run build",
+// "start": "node dist/index.js",
