@@ -15,3 +15,6 @@ app.use("/payments", paymentRoutes);
 app.listen(PORT, () =>
   console.log("🚀🚀🚀 Server is up and running on: ", PORT)
 );
+
+// package.json
+// "prebuild": "tslint -c tslint.json -p tsconfig.json --fix",

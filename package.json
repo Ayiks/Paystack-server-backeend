@@ -1,11 +1,10 @@
 {
-  "name": "wtfa-deta-backend",
+  "name": "paystack-backend-server",
   "version": "1.0.0",
   "description": "",
   "main": "dist/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "prebuild": "tslint -c tslint.json -p tsconfig.json --fix",
     "build": "tsc",
     "prestart": "npm run build",
     "start": "node dist/index.js",
