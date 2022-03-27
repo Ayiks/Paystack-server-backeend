@@ -83,7 +83,7 @@ export const submitOtp = async (req: Request, res: Response) => {
 
 export const handleWebhook = async (req: Request, res: Response) => {
   try {
-    console.log(`Incoming data: ${req.body}`);
+    console.log(`Incoming data: ${JSON.stringify(req.body, null, 2)}`);
   } catch (error) {
     console.log("Webhook Error:", error);
     return res.status(400).send("Something went wrong");
