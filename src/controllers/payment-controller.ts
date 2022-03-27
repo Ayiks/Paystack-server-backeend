@@ -3,7 +3,7 @@ import { randomUUID } from "crypto";
 import { Request, Response } from "express";
 import { paystackAxiosClient } from "../services/axios-instance";
 import { firebaseApp } from "../services/firebase";
-import { getFirestore, collection, addDoc } from "firebase/firestore/lite";
+import { getFirestore, collection, addDoc } from "firebase/firestore";
 
 // initialize Cloud Firestore
 const firestore = getFirestore(firebaseApp);
