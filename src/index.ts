@@ -11,7 +11,7 @@ app.use(express.json());
 
 // attach routes to server instance
 app.use("/payments", paymentRoutes);
-app.use("/", (rq, res) => res.json({ message: "Welcome to Paystack Backend" }));
+app.get("/", (rq, res) => res.json({ message: "Welcome to Paystack Backend" }));
 
 app.listen(PORT, () =>
   console.log("🚀🚀🚀 Server is up and running on: ", PORT)
